@@ -13,8 +13,8 @@ function addMask () {
   }
 
   const onPhonePaste = function (e) {
-    const input = e.target,
-    inputNumbersValue = getInputNumbersValue(input)
+    const input = e.target
+    const inputNumbersValue = getInputNumbersValue(input)
     const pasted = e.clipboardData || window.clipboardData
 
     if (pasted) {
